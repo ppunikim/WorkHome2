@@ -10,13 +10,13 @@ public void mehtod(ArrayList<Integer> list) {}
 ```
 public void method(List<Integer> list) {}
 ```
-* 첫번째 코드에서는 다음과 같은 코드로 method를 사용할수 밖에 없다
+* 첫번째 코드에서는 다음과 같은 코드로 method를 사용할수 밖에 없다.
 ```
 ArrayList<Interger> list = new ArrayList<Integer>();
 
 obj.method(list);
 ```
-* 하지만 두번재 코드에서는 다음과 같이 유여한 방법으로 method 를 사용할수 있다
+* 하지만 두번재 코드에서는 다음과 같이 유여한 방법으로 method 를 사용할수 있다.
 ```
 List<Integer> list1 = new ArrayList<>();
 List<Integer> list2 = new LinkedList<>();
