@@ -96,7 +96,6 @@ public class TodoServiceImplV1 implements TodoService {
 	}
 
 	// TODO 할 일을 완료했을 때 사용
-	@Override
 	public void update(TodoVO tVO) {
 		
 	}
@@ -135,6 +134,13 @@ public class TodoServiceImplV1 implements TodoService {
 	// TODO TodoList 내용을 파일에 저장하기
 	@Override
 	public void compTodo(Integer num) {
+		
+	}
+
+
+	// TODO 할 일 변경하기
+	@Override
+	public void update(Integer num, String content) {
 		
 	}
 	

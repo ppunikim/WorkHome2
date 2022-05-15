@@ -15,6 +15,7 @@ public class TodoControllerV11 {
 		TodoService toService = new TodoServiceImplV1();
 		InputService inService = new InputServiceImplV1();
 		
+		// todo 추가하기, 연속으로 안됨., List보기
 		while(true) {
 			Integer menu = inService.menu();
 			if(menu == null) {

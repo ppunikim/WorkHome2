@@ -9,7 +9,7 @@ import com.callor.app.service.impl.InputServiceImplV1;
 import com.callor.app.service.impl.TodoServiceImplV1;
 import com.callor.app.utils.Line;
 
-public class ControllerV12 {
+public class TodoControllerV12 {
 	public static void main(String[] args) {
 		
 		TodoService toService = new TodoServiceImplV1();
@@ -36,6 +36,7 @@ public class ControllerV12 {
 				printTodo(todoList);
 			}
 		}
+		//todo추가하기 -> 연속으로 입력가능, List 보기
 		
 		
 		
