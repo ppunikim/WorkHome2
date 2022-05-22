@@ -47,22 +47,16 @@ public class AddrServiceV1 {
 		for(int i = 0; i < addList.size(); i++ ) {
 			for(int j = i + 1; j < addList.size(); j++ ) {
 				if(addList.get(i).getAge() > addList.get(j).getAge()) {
-					// j번째 값을 voTong에 담는다. -> j 가 비어있다.
+					// j번째 값을 voTong에 복사해 담는다. 
 					AddressVO voTong = addList.get(j);
 					//(저장할 공간 , 저장할 수)
-					addList.set(j, addList.get(i));	//i번째 값을 가져와서 j 공간에 넣는다.
-					addList.set(i,voTong); //비어있는 i번째 공간에 j값이 저장돼있는 voTong을 저장
+					addList.set(j, addList.get(i));	//i번째 값을 가져와서 j째 위치에 저장
+					addList.set(i,voTong); //i번째 공간에 j값이 저장돼있는 voTong을 저장
 				}
 			}
 		}//end for
 		System.out.print("나이 비교 : ");
 		System.out.println(addList);
 		
-		
-		
 	}//end printAddrList
-	
-
-	
-	
 }
